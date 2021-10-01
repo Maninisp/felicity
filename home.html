@@ -1,0 +1,72 @@
+<html>
+
+<head>
+<title>Ner</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+
+<form method="post" action = "" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% for x in form_init %}
+    <b>{{ x.0}}</b>        {{ x.1}} <br><br>
+    {% endfor %}
+
+    <!---
+    <br> Text to tagged  {{ form.text }}<br>
+    <br> File to upload  {{ form.file }}<br>
+    <br> Predict on - {{ forms.radio }}<br><br>
+-->
+    <input type="submit" value="Submit" >
+</form>
+
+<br>
+<br>
+<br>
+<h2>Results</h2>
+
+    <script type="text/javascript">
+        function download() {
+            var a = document.body.appendChild(
+               document.createElement("a")
+            );
+           a.download = "NER_pred.txt";
+           a.href = "data:text/html," + document.getElementById("content").innerHTML;
+           a.click(); //Trigger a click on the element
+        }
+    </script>
+
+
+
+
+<button onclick="download()" >Download</button>
+<br>
+        <div id="content">
+           {{ aa }}
+        </div>
+       
+    </div>
+
+
+<!--
+<form method='post'>
+{% csrf_token %}
+{{ form }}
+<button type="submit">Submit</button>
+
+<input type="text" name="textbox" placeholder="Text to be tagged" required="required"/>
+
+<br>
+<input type="file" name="file1">
+<button type="submit">Submit</button>
+NER using ML
+<br>
+<br>
+{{aa}}
+{% csrf_token %}
+</form>
+-->
+
+</body>
+</html>

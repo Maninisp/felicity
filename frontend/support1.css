@@ -1,0 +1,12 @@
+body {
+  background: #f0f8ff;
+}
+
+header {
+  background: #0077cc;
+}
+
+.service-card {
+  background: white;
+  border-left: 5px solid #0077cc;
+}

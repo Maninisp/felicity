@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Healthcare Support</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="support1.css">
+</head>
+<body>
+
+<header>Healthcare Support</header>
+
+<section class="filters">
+  <select id="conditionFilter">
+    <option value="">All Conditions</option>
+    <option value="autism">Autism</option>
+    <option value="adhd">ADHD</option>
+    <option value="speech">Speech Delay</option>
+  </select>
+
+  <select id="cityFilter">
+    <option value="">All Cities</option>
+    <option value="mumbai">Mumbai</option>
+  </select>
+
+  <select id="typeFilter">
+  <option value="all">All Categories</option>
+  <option value="doctor">Doctors</option>
+  <option value="therapist">Therapists</option>
+  <option value="medical-support">Medical Support</option>
+  <option value="financial-aid">Financial Aid Centers</option>
+  <option value="parent-support">Parent Support Groups</option>
+</select>
+</section>
+
+<p id="resultCount"></p>
+
+<main id="supportContainer" class="services"></main>
+
+ <script>
+    window.API_BASE = "http://127.0.0.1:5000/services";
+  </script>
+<script src="js/api.js"></script>
+<script src="js/support.js"></script>
+</body>
+</html>

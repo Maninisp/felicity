@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Felicity | Find Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="link.css" />
+</head>
+<body>
+
+<header>
+  Find Support Services
+</header>
+
+<section class="filters">
+  <div>
+    <label for="conditionFilter">Condition</label>
+    <select id="conditionFilter">
+      <option value="all">All</option>
+      <option value="autism">Autism</option>
+      <option value="adhd">ADHD</option>
+      <option value="speech">Speech Delay</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="cityFilter">City</label>
+    <select id="cityFilter">
+      <option value="all">All</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="pune">Pune</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="searchInput">Search</label>
+    <input type="text" id="searchInput" placeholder="Doctor, therapy, school..." />
+  </div>
+</section>
+
+<main class="services" role="list">
+
+  <article class="service-card"
+           role="listitem"
+           data-id="doc1"
+           data-type="doctor"
+           data-condition=" adhd"
+           data-city="mumbai">
+    <h3>Dr. Priyanka Parikh</h3>
+    <p>Developmental Pediatrician</p>
+    <p>Mazgaon, Mumbai</p>
+    <p>📞 098696 65615</p>
+    <button class="save-btn" aria-label="Save service">⭐ Save</button>
+  </article>
+
+  <article class="service-card"
+           role="listitem"
+           data-id="therapy1"
+           data-type="therapy"
+           data-condition="speech autism"
+           data-city="mumbai">
+    <h3>Ummeed Child Development Center</h3>
+    <p>Therapy & Training</p>
+    <p>Lower Parel, Mumbai</p>
+    <p>📞 022 6248 8100</p>
+    <button class="save-btn" aria-label="Save service">⭐ Save</button>
+  </article>
+
+  <article class="service-card"
+           role="listitem"
+           data-id="school1"
+           data-type="school"
+           data-condition="autism"
+           data-city="mumbai">
+    <h3>Priyanj Special School</h3>
+    <p>Special Education</p>
+    <p>Goregaon, Mumbai</p>
+    <p>📞 022 2875 3880</p>
+    <button class="save-btn" aria-label="Save service">⭐ Save</button>
+  </article>
+
+</main>
+
+<script src="links.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Felicity | Find Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>Find Support Services</header>
+
+<section class="filters">
+  <select id="conditionFilter">
+    <option value="all">All Conditions</option>
+    <option value="autism">Autism</option>
+    <option value="adhd">ADHD</option>
+    <option value="speech">Speech Delay</option>
+  </select>
+
+  <select id="cityFilter">
+    <option value="all">All Cities</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="pune">Pune</option>
+  </select>
+
+  <input type="text" id="searchInput" placeholder="Search services..." />
+</section>
+
+<main id="services" class="services"></main>
+
+<script src="script.js"></script>
+</body>
+</html>

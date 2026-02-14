@@ -1,0 +1,56 @@
+[
+  {
+    "id": "doc1",
+    "name": "Dr. Priyanka Parikh",
+    "type": "doctor",
+    "category": "Doctor",
+    "conditions": ["autism", "adhd"],
+    "city": "mumbai",
+    "address": "Mazgaon, Mumbai",
+    "phone": "098696 65615",
+    "website": "https://drpriyankaparikh.wordpress.com/"
+  },
+  {
+    "id": "therapy1",
+    "name": "Ummeed Child Development Center",
+    "type": "therapy",
+    "category": "Therapy",
+    "conditions": ["speech", "autism"],
+    "city": "mumbai",
+    "address": "Lower Parel, Mumbai",
+    "phone": "022 6248 8100",
+    "website": "http://ummeed.org/"
+
+  },
+  {
+    "id": "school1",
+    "name": "Priyanj Special School",
+    "type": "school",
+    "category": "School",
+    "conditions": ["autism"],
+    "city": "mumbai",
+    "address": "Goregaon, Mumbai",
+    "phone": "022 2875 3880",
+    "website": "http://priyanjspecialschool.com/"
+  },
+  {
+    "id": "train1",
+    "name": "Ummeed Child Development Center",
+    "category": "Training",
+    "conditions": ["autism", "speech"],
+    "city": "mumbai",
+    "address": "Lower Parel, Mumbai",
+    "phone": "022 6248 8100",
+    "website": "http://ummeed.org/"
+  },
+  {
+    "id": "support1",
+    "name": "Mann Center for Individuals with Special Needs",
+    "category": "Support",
+    "conditions": ["developmental"],
+    "city": "mumbai",
+    "address": "Santacruz West, Mumbai",
+    "phone": "098199 27194",
+    "website": "http://www.mann.org.in/"
+  }
+]

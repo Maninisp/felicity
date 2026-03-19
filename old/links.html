@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>links</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="link.css">
+  <script type="text/javascript" src="links.js"></script>
+</head>
+<body>
+<header>Links</header>
+<button class="tablink" onclick="openPage('School', this, '#33cc33')">Schools</button>
+	
+<button class="tablink" onclick="openPage('Therapy', this, '#33cc33')">Therapist</button>
+<button class="tablink" onclick="openPage('Doctor', this, '#33cc33')" id="defaultOpen">Doctor</button>
+
+
+<div id="Doctor" class="tabcontent">
+  <h2>Clinics:</h2>
+  <p><b>Dr. Ankita Shah - Dentician</b><br>
+Address: Royal Apartments, 502, Bhaudaji Rd, Sion West, Mumbai, Maharashtra 400022<br>
+Phone: 022 2407 8410<br>
+Website:<a href="http://www.dentician.in/"> http://www.dentician.in/</a></p>
+<p><b>Happy Tooth Clinic for Kids</b><br>
+Address: Guruprasad, Dr. Meenakshi Kher B-001, 2nd Cross Rd, Lokhandwala Complex, Andheri West, Mumbai, Maharashtra 400053<br>
+Phone: 022 2634 8490<br>
+Website:<a href="http://www.happytoothclinic.com/">http://www.happytoothclinic.com/</a> </p>
+
+<p><b>Dr Priyanka Parikh, Developmental Pediatrician, Autism, ADHD, Learning Disabilities, Mumbai, Doctors</b><br>
+Address: B2, Ground floor, Saifee Park,Opp Isabel High School, Dr. Mascareahas Road,Mazgaon, Mumbai, Maharashtra 400010<br>
+Phone: 098696 65615<br>
+Website:<a href="https://drpriyankaparikh.wordpress.com/">https://drpriyankaparikh.wordpress.com/</a></p>
+<p><b>Pediatric Neurologist Dr Amit Vatkar</b><br>
+Address: Neurays Neurology Center, KOLEKAR hospital Omprakash Arcade, near Ambedkar circle, Chembur, Mumbai, Maharashtra 400071<br>
+Phone: 087678 44488<br></p>
+</div>
+
+<div id="Therapy" class="tabcontent">
+  <h2>Therapy Centre:</h2>
+  <p><b>Indlas Child Guidance Clinic</b><br>
+Address: B Wing, Shree Complex, 128, Metro Station, Sakinaka, Saki Vihar Rd, Andheri East, Mumbai, Maharashtra 400072<br>
+Phone: 022 2857 6232<br>
+Website:<a href="http://indlaschildwellness.com/"> http://indlaschildwellness.com/</a></p>
+<p><b>Mom's Belief Aarambh Child Care Centre</b><br>
+Address: Shop No.6, Datta Mansion, Vakola Bridge, Shivaji Nagar, Santacruz East, Mumbai, 400055.<br>
+Website:<a href="https://aarambh-child-care-centre.business.site/">https://aarambh-child-care-centre.business.site/</a> </p> 
+</div>
+
+<div id="School" class="tabcontent">
+  <h3>Schools:</h3>
+  <p><b>Silver Lining Center</b><br>
+Address: B Wing, One BKC 1202, G Block BKC, Bandra East, Mumbai, Maharashtra 400051<br>
+Phone: 098305 24817<br>
+Website:<a href="http://www.silverliningcenter.in/">http://www.silverliningcenter.in/</a> </p>
+<p><b>Priyanj Special School</b><br>
+Address: 239/1905 Motilal Nagar No.1, Achyut Behre Marg, Road No. 4, Goregaon (West), near Ganesh Mandir, Mumbai, Maharashtra 400104.<br>
+Phone: 022 2875 3880<br>
+Website:<a href="http://priyanjspecialschool.com/">http://priyanjspecialschool.com/</a> </p>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>

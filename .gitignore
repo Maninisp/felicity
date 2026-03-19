@@ -13,3 +13,11 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
+
+# data files
+backend/pipeline/raw_data/
+backend/pipeline/processed_data/
+
+# python cache
+__pycache__/
+*.pyc
